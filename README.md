@@ -8,10 +8,11 @@ The support department has been getting complaints from customers on ticket hand
 In this scenario, the first posed question is whether the workload forecasted by the developers is actually accurate. Knowing how reliable the time estimations are can help better predict the following weeks’ workload and, as a consequence, to make a better allocation of resources, allowing the company to fulfill promises made to customers on completion time and/or budget.
 
 **INDEX**
-1. Accuracy variation
-2. Ticket bottleneck analysis
+1. [Accuracy variation](#accuracy-variation)
+2. [Ticket bottleneck analysis](#ticket-bottleneck-analysis)
 3. Ticket categorization
 4. Conclussions and recommendations
+
 
 ### Accuracy variation
 
