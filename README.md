@@ -45,7 +45,7 @@ Different visualizations were then built to illustrate the magnitude of the issu
 
 Globally, per development team and per each support manager:
 
-![Dashboard 1](https://github.com/Leonardojul/portfolio/blob/main/Accuracy-variation-1.png)
+![Dashboard 1](https://raw.githubusercontent.com/Leonardojul/portfolio/main/Accuracy-variation-1.png)
 
 Detailed view (on drill down) for any of the given categories, breaking down the missed forecasted estimations on overestimates and underestimates:
 
