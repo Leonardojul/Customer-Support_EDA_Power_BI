@@ -109,3 +109,16 @@ And finally, an overall description of the most frequent issues being handled in
 
 
 ### Conclussions and recommendations
+
+- Accuracy on time estimations needs to be improved in order to be able to properly forecast resources needed on support, ticket budget or completion time
+- For the same reasons the estimated ticket ratio also needs to increase.
+- The greatest bottleneck to ticket completion is the waiting time on the customer's side. Customer success management could raise awareness on this fact to speed ticket handling on support and thus increase customer satisfaction
+- The development team is the second greatest bottleneck. More resources should be assigend to support to reduce ticket handling time
+- The majority of the work on support is on issues reported by customers. Knowing which issues are more commmon, take more resources or take longer to get resolved should help the business focus on the problematic areas for some quick wins.
+
+A set of new KPIs has been proposed to help track resources efficiency and workload prediction:
+- Accuracy variation
+- Estimated ticket ratio
+- Number of stops per ticket
+
+
