@@ -64,8 +64,39 @@ The second request posed by management was to understand where the incoming work
 
 To follow up a ticket's activity in real time, a new column that counts running stops (one stop is counted every time a ticket has to wait in a queie, ie; developer support, hosting, support managers...) had to be implemented:
 
-[Insert dax code here]
+```DAX
+AccumulatedStops =
+VAR Ticket = TicketHistory[Work Item Id]
+VAR CurrentDate = TicketHistory[Date]
+VAR FilteredTable =
+    FILTER (
+        TicketHistory,
+        TicketHistory[Work Item Id] = Ticket
+            && TicketHistory[Date] <= CurrentDate
+    )
+RETURN
+    CALCULATE ( SUM ( TicketHistory[Change column] ), FilteredTable )
+```
 
+Then, the current number of stops needs to be updated in the tickets table:
+
+```DAX
+CurrentStops =
+CALCULATE (
+    MAX ( TicketHistory[AccumulatedStops] ),
+    FILTER ( TicketHistory, TicketHistory[Work Item Id] = Tickets[Work Item Id] )
+)
+```
+
+Finally, it is possible to count how many tickets are there per each number of stops, e.g. How many tickets required three stops to be resolved?
+
+```DAX
+Count =
+CALCULATE (
+    COUNT ( Tickets[Work Item Id] ),
+    FILTER ( Tickets, Tickets[CurrentStops] = CountofTicketStops[Number of stops] )
+)
+```
 When plotting the data in a histogram, the following distribution was revealed:
 
 ![Dashboard 4](https://github.com/Leonardojul/portfolio/blob/main/Ticket-history-analysis-1.png)
@@ -78,12 +109,37 @@ Complementing the above, it was necessary to know where these tickets were actua
 
 The first step was to categorize the queues or buckets and to classify each stop for each ticket accordingly:
 
-[insert dax code here]
+```DAX
+AccumulatedStops =
+VAR Ticket = TicketHistory[Work Item Id]
+VAR CurrentDate = TicketHistory[Date]
+VAR FilteredTable =
+    FILTER (
+        TicketHistory,
+        TicketHistory[Work Item Id] = Ticket
+            && TicketHistory[Date] <= CurrentDate
+    )
+RETURN
+    CALCULATE ( SUM ( TicketHistory[Change column] ), FilteredTable )
+```
+
+```DAX
+CurrentStops =
+CALCULATE (
+    MAX ( TicketHistory[AccumulatedStops] ),
+    FILTER ( TicketHistory, TicketHistory[Work Item Id] = Tickets[Work Item Id] )
+)
+```
 
 The next step is to aggregate the information
 
-[dax code]
-
+```DAX
+Count =
+CALCULATE (
+    COUNT ( Tickets[Work Item Id] ),
+    FILTER ( Tickets, Tickets[CurrentStops] = CountofTicketStops[Number of stops] )
+)
+```
 And finally it is possible to visualize it:
 
 ![Dashboard 5](https://github.com/Leonardojul/portfolio/blob/main/Ticket-history-analysis-2.png)
