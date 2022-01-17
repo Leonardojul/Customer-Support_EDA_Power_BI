@@ -18,7 +18,7 @@ In this scenario, the first posed question is whether the workload forecasted by
 
 The first metric chosen to analyze the scenario is the [M.A.P.E](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error): 
 
-![](https://latex.codecogs.com/png.image?\dpi{110}&space;\bg_white&space;M.A.P.E&space;=&space;\frac{1}{n}\sum_{t&space;=&space;1}^{n}\left|1-\frac{Ft}{At}&space;\right|)
+![](https://latex.codecogs.com/png.image?\dpi{110}&space;\bg_white&space;M.A.P.E&space;=&space;\frac{1}{n}\sum_{t&space;=&space;1}^{n}\left|1-\frac{Ft}{At}&space;\right&#124;)
  
 The absolute part calculation has been implemented on Power BI on DAX on column level with the following code:
 
