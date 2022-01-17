@@ -9,7 +9,7 @@ In this scenario, the first posed question is whether the workload forecasted by
 
 
 
-The first metric is actually the [M.A.P.E](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error): 
+The first metric chosen to analyze the scenario is the [M.A.P.E](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error): 
 
 ![](https://latex.codecogs.com/png.image?\dpi{110}&space;\bg_white&space;M.A.P.E&space;=&space;\frac{1}{n}\sum_{t&space;=&space;1}^{n}\left|1-\frac{Ft}{At}&space;\right|)
  
@@ -40,15 +40,9 @@ Globally, per development team and per each support manager:
 
 ![Dashboard 1](https://github.com/Leonardojul/portfolio/blob/main/Accuracy-variation-1.png)
 
-
-
-
 Detailed view (on drill down) for any of the given categories, breaking down the missed forecasted estimations on overestimates and underestimates:
 
-
-
-
-
+![Dashboard 2](https://github.com/Leonardojul/portfolio/blob/main/Accuracy-variation-2.png)
 
 Additionally to the Accuracy Variation KPI, a dashboard containing information on how much of the work has actually been estimated was necessary to understand how much the Accuracy Variation correlates with the actual situation on support.
 
