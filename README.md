@@ -1,5 +1,4 @@
-# Portfolio
-## Compilation of works and projects on data analysis
+## Exploratory data analysis with Power BI
 
 ### Background
 
