@@ -10,8 +10,8 @@ In this scenario, the first posed question is whether the workload forecasted by
 **INDEX**
 1. [Accuracy variation](#accuracy-variation)
 2. [Ticket bottleneck analysis](#ticket-bottleneck-analysis)
-3. Ticket categorization
-4. Conclussions and recommendations
+3. [Ticket categorization](#ticket-categorization)
+4. [Conclussions and recommendations](#conclussions-and-recommendations)
 
 
 ### Accuracy variation
@@ -86,5 +86,26 @@ The next step is to aggregate the information
 
 And finally it is possible to visualize it:
 
-![Dashboard 4](https://github.com/Leonardojul/portfolio/blob/main/Ticket-history-analysis-2.png)
+![Dashboard 5](https://github.com/Leonardojul/portfolio/blob/main/Ticket-history-analysis-2.png)
 
+
+### Ticket categorization
+
+Another question presented by the business was to better understand the work performed on support. Since this information was not readily available, customization were performed on the Azure DevOps platform to gather the missing data and a new project started.
+
+Every support manager was requested to fill in two new fields added at ticket level to help categorize and describe the work being done on support.
+
+After a few weeks, the first descriptive metrics could be presented:
+
+![Dashboard 6](https://github.com/Leonardojul/portfolio/blob/main/Categorization-1.png)
+
+Drilling down on the data:
+
+![Dashboard 7](https://github.com/Leonardojul/portfolio/blob/main/Categorization-2.png)
+
+And finally, an overall description of the most frequent issues being handled in support:
+
+![Dashboard 8](https://github.com/Leonardojul/portfolio/blob/main/Categorization-3.png)
+
+
+### Conclussions and recommendations
