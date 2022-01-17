@@ -49,11 +49,11 @@ Globally, per development team and per each support manager:
 
 Detailed view (on drill down) for any of the given categories, breaking down the missed forecasted estimations on overestimates and underestimates:
 
-![Dashboard 2](https://github.com/Leonardojul/portfolio/blob/main/Accuracy-variation-2.png)
+![Dashboard 2](https://raw.githubusercontent.com/Leonardojul/portfolio/main/Accuracy-variation-2.png)
 
 Additionally to the Accuracy Variation KPI, a dashboard containing information on how much of the work has actually been estimated was necessary to understand how much the Accuracy Variation correlates with the actual situation on support.
 
-![Dashboard 3](https://github.com/Leonardojul/portfolio/blob/main/Work-completion.png)
+![Dashboard 3](https://raw.githubusercontent.com/Leonardojul/portfolio/main/Work-completion.png)
 
 The above data shows the magnitude of the situation in support, where 739 hours were estimated while over 2k hours were actually worked (1.3k + 718.7 hours). This means that the real work performed by support and the developers is around x3 times higher than what has been estimated.
 
@@ -99,7 +99,7 @@ CALCULATE (
 ```
 When plotting the data in a histogram, the following distribution was revealed:
 
-![Dashboard 4](https://github.com/Leonardojul/portfolio/blob/main/Ticket-history-analysis-1.png)
+![Dashboard 4](https://raw.githubusercontent.com/Leonardojul/portfolio/main/Ticket-history-analysis-1.png)
 
 - On average, a ticket has to wait up to 4 times to be picked up. 
 - Most tickets will be resolved after queuing in 2 stops
@@ -137,7 +137,7 @@ IF (
 
 The next step is to aggregate the data and to plot it:
 
-![Dashboard 5](https://github.com/Leonardojul/portfolio/blob/main/Ticket-history-analysis-2.png)
+![Dashboard 5](https://raw.githubusercontent.com/Leonardojul/portfolio/main/Ticket-history-analysis-2.png)
 
 
 ### Ticket categorization
@@ -148,15 +148,15 @@ Every support manager was requested to fill in two new fields added at ticket le
 
 After a few weeks, the first descriptive metrics could be presented:
 
-![Dashboard 6](https://github.com/Leonardojul/portfolio/blob/main/Categorization-1.png)
+![Dashboard 6](https://raw.githubusercontent.com/Leonardojul/portfolio/main/Categorization-1.png)
 
 Drilling down on the data:
 
-![Dashboard 7](https://github.com/Leonardojul/portfolio/blob/main/Categorization-2.png)
+![Dashboard 7](https://raw.githubusercontent.com/Leonardojul/portfolio/main/Categorization-2.png)
 
 And finally, an overall description of the most frequent issues being handled in support:
 
-![Dashboard 8](https://github.com/Leonardojul/portfolio/blob/main/Categorization-3.png)
+![Dashboard 8](https://raw.githubusercontent.com/Leonardojul/portfolio/main/Categorization-3.png)
 
 
 ### Conclussions and recommendations
@@ -171,5 +171,3 @@ A set of new KPIs has been proposed to help track resources efficiency and workl
 - Accuracy variation
 - Estimated ticket ratio
 - Number of stops per ticket
-
-
